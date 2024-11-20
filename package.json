@@ -1,0 +1,39 @@
+{
+	"name": "basic",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build --mode client && vite build",
+		"clean": "git clean -xdf .cache .next .turbo node_modules",
+		"format": "biome check --write . && biome format --write .",
+		"lint": "biome lint .",
+		"typecheck": "tsc --noEmit"
+	},
+	"private": true,
+	"dependencies": {
+		"@hono/react-renderer": "^0.2.1",
+		"@radix-ui/react-slot": "^1.1.0",
+		"autoprefixer": "^10.4.20",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"hono": "^4.6.11",
+		"honox": "^0.1.26",
+		"lucide-react": "^0.460.0",
+		"postcss": "^8.4.49",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"tailwind-merge": "^2.5.4",
+		"tailwindcss": "^3.4.15",
+		"tailwindcss-animate": "^1.0.7",
+		"vaul": "^1.1.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@hono/vite-build": "^1.0.0",
+		"@hono/vite-dev-server": "^0.16.0",
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"vite": "^5.2.12"
+	},
+	"packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228"
+}
